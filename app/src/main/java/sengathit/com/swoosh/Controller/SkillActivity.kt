@@ -1,8 +1,9 @@
-package sengathit.com.swoosh
+package sengathit.com.swoosh.Controller
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import sengathit.com.swoosh.Utilities.EXTRA_LEAGUE
+import sengathit.com.swoosh.R
 
 class SkillActivity : BaseActivity() {
     var league = ""
