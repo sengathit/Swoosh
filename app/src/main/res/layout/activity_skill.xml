@@ -31,14 +31,15 @@
             android:text="@string/finish"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/getStartedBtn"
+            android:id="@+id/finishBtn"
             android:background="#64000000"
             android:padding="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView5" android:textColor="#fff" android:textSize="24sp"
-            android:fontFamily="@font/montserrat" app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold"/>
+            android:fontFamily="@font/montserrat" app:layout_constraintHorizontal_bias="0.0" android:textStyle="bold"
+            android:onClick="finishedClicked"/>
     <TextView
             android:text="@string/i_am_a"
             android:layout_width="wrap_content"
@@ -58,13 +59,15 @@
                 android:text="@string/toggle_beginner_btn"
                 android:layout_width="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:layout_weight="1"
-                android:textOff="@string/toggle_beginner_btn" android:textOn="@string/toggle_beginner_btn" android:background="@drawable/swoosh_toggle"/>
+                android:layout_height="wrap_content" android:id="@+id/beginnerToggleBtn" android:layout_weight="1"
+                android:textOff="@string/toggle_beginner_btn" android:textOn="@string/toggle_beginner_btn"
+                android:background="@drawable/swoosh_toggle" android:onClick="beginnerClicked"/>
         <ToggleButton
                 android:text="@string/toggle_advanced_btn"
                 android:layout_width="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton6" android:layout_weight="1"
-                android:textOff="@string/toggle_advanced_btn" android:textOn="@string/toggle_advanced_btn" android:background="@drawable/swoosh_toggle"/>
+                android:layout_height="wrap_content" android:id="@+id/advancedToggleBtn" android:layout_weight="1"
+                android:textOff="@string/toggle_advanced_btn" android:textOn="@string/toggle_advanced_btn"
+                android:background="@drawable/swoosh_toggle" android:onClick="advancedClicked"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

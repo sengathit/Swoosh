@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".Controller.SkillActivity">
         </activity>
+        <activity android:name=".Controller.FinishActivity">
+        </activity>
     </application>
 
 </manifest>
